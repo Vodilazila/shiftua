@@ -269,6 +269,16 @@
       opacity: 0;
       transition: opacity 1.4s ease;
       pointer-events: none;
+      background-color: #072820;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .hero__slide[data-index="0"] {
+      background-image: url("assets/video/poster-1.jpg");
+    }
+    .hero__slide[data-index="1"] {
+      background-image: url("assets/video/poster-2.jpg");
     }
     .hero__slide.is-active {
       opacity: 1;
@@ -279,8 +289,7 @@
       height: 100%;
       object-fit: cover;
       opacity: 0;
-      transition: opacity 0.45s ease;
-      background: #072820;
+      transition: opacity 0.5s ease;
     }
     .hero__slide video.is-ready {
       opacity: 1;
