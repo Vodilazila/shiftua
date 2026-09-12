@@ -910,6 +910,20 @@
     }
     .modal__phone:hover { color: var(--forest-deep); }
 
+
+    /* Desktop monitors only — leave laptop layouts untouched */
+    @media (min-width: 1600px) {
+      .header__inner .logo {
+        margin-left: -1cm;
+      }
+      .header__inner .nav {
+        margin-right: -1cm;
+      }
+      .routes > .container > .section-head {
+        margin-top: -1cm;
+      }
+    }
+
     /* ——— Responsive ——— */
     @media (max-width: 1024px) {
       .services__grid { grid-template-columns: repeat(2, 1fr); }
